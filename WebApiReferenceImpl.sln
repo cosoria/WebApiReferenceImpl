@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiReferenceImpl", "src\Api\WebApiReferenceImpl.csproj", "{5BCF6432-9109-439E-B670-45376795DDDA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiReferenceImpl.Tests", "src\Tests\WebApiReferenceImpl.Tests.csproj", "{94BE5441-6F77-4421-ADFD-31D90A3FD785}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiReferenceImpl.Data", "src\Data\WebApiReferenceImpl.Data.csproj", "{D7119D26-33A6-4E98-89CB-0A9038AD6475}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiReferenceImpl.Services", "src\Services\WebApiReferenceImpl.Services.csproj", "{5C5D6577-C6A1-4EE1-8DEA-BD2BD3552B21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiReferenceImpl.Core", "src\Core\WebApiReferenceImpl.Core.csproj", "{E353CEDC-1105-4E43-A63C-B76FB56CC311}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,18 @@ Global
 		{94BE5441-6F77-4421-ADFD-31D90A3FD785}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94BE5441-6F77-4421-ADFD-31D90A3FD785}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94BE5441-6F77-4421-ADFD-31D90A3FD785}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7119D26-33A6-4E98-89CB-0A9038AD6475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7119D26-33A6-4E98-89CB-0A9038AD6475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7119D26-33A6-4E98-89CB-0A9038AD6475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7119D26-33A6-4E98-89CB-0A9038AD6475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C5D6577-C6A1-4EE1-8DEA-BD2BD3552B21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C5D6577-C6A1-4EE1-8DEA-BD2BD3552B21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C5D6577-C6A1-4EE1-8DEA-BD2BD3552B21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C5D6577-C6A1-4EE1-8DEA-BD2BD3552B21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E353CEDC-1105-4E43-A63C-B76FB56CC311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E353CEDC-1105-4E43-A63C-B76FB56CC311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E353CEDC-1105-4E43-A63C-B76FB56CC311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E353CEDC-1105-4E43-A63C-B76FB56CC311}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

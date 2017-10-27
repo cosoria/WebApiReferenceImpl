@@ -206,8 +206,16 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Constants.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseWebApiController.cs" />
+    <Compile Include="Controllers\ClinicsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OwnersController.cs" />
+    <Compile Include="Controllers\PetController.cs" />
+    <Compile Include="Models\AppointmentModel.cs" />
+    <Compile Include="Models\ClinicModel.cs" />
+    <Compile Include="Models\IModelFactory.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -215,9 +223,17 @@
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\IModelValidator.cs" />
+    <Compile Include="Models\ModelFactory.cs" />
+    <Compile Include="Models\ModelValidator.cs" />
+    <Compile Include="Models\OwnerModel.cs" />
+    <Compile Include="Models\PetModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Services\ClinicsService.cs" />
+    <Compile Include="Services\OwnersService.cs" />
+    <Compile Include="Services\PetsService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -287,6 +303,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\WebApiReferenceImpl.Core.csproj">
+      <Project>{e353cedc-1105-4e43-a63c-b76fb56cc311}</Project>
+      <Name>WebApiReferenceImpl.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\WebApiReferenceImpl.Data.csproj">
+      <Project>{d7119d26-33a6-4e98-89cb-0a9038ad6475}</Project>
+      <Name>WebApiReferenceImpl.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\WebApiReferenceImpl.Services.csproj">
+      <Project>{5c5d6577-c6a1-4ee1-8dea-bd2bd3552b21}</Project>
+      <Name>WebApiReferenceImpl.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

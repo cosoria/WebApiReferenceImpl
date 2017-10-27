@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E353CEDC-1105-4E43-A63C-B76FB56CC311}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApiReferenceImpl.Core</RootNamespace>
+    <AssemblyName>WebApiReferenceImpl.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataEventArgs.cs" />
+    <Compile Include="Data\EntityState.cs" />
+    <Compile Include="Data\IDataContext.cs" />
+    <Compile Include="Data\IEntity.cs" />
+    <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Data\IUnitOfWork.cs" />
+    <Compile Include="Disposable.cs" />
+    <Compile Include="Encryption\Cypher.cs" />
+    <Compile Include="Ensure.cs" />
+    <Compile Include="Extensions\BasicExtensions.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
+    <Compile Include="Extensions\DoubleExtensions.cs" />
+    <Compile Include="Extensions\IntegerExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Logging\ConsoleLogger.cs" />
+    <Compile Include="Logging\FileLogger.cs" />
+    <Compile Include="Logging\ILogger.cs" />
+    <Compile Include="Logging\ILoggerFactory.cs" />
+    <Compile Include="Logging\LoggerExtensions.cs" />
+    <Compile Include="Logging\LoggerFactory.cs" />
+    <Compile Include="Logging\LogSeverity.cs" />
+    <Compile Include="Logging\NullLogger.cs" />
+    <Compile Include="Logging\SystemEventLogger.cs" />
+    <Compile Include="Maybe.cs" />
+    <Compile Include="Messaging\IExecuteWithObject.cs" />
+    <Compile Include="Messaging\IExecuteWithObjectAndResult.cs" />
+    <Compile Include="Messaging\IMessenger.cs" />
+    <Compile Include="Messaging\Messenger.cs" />
+    <Compile Include="Messaging\WeakAction.cs" />
+    <Compile Include="Messaging\WeakActionGeneric.cs" />
+    <Compile Include="Messaging\WeakFunc.cs" />
+    <Compile Include="Messaging\WeakFuncGeneric.cs" />
+    <Compile Include="Numerics\RandomNumberGenerator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\Accessor.cs" />
+    <Compile Include="Reflection\DelegateAdjuster.cs" />
+    <Compile Include="Reflection\PropertyChain.cs" />
+    <Compile Include="Reflection\Reflect.cs" />
+    <Compile Include="Reflection\ReflectionHelper.cs" />
+    <Compile Include="Reflection\SingleProperty.cs" />
+    <Compile Include="Result.cs" />
+    <Compile Include="RetryPolicy.cs" />
+    <Compile Include="SystemTime.cs" />
+    <Compile Include="Threading\BaseLock.cs" />
+    <Compile Include="Threading\Locks.cs" />
+    <Compile Include="Threading\ReadLock.cs" />
+    <Compile Include="Threading\ReadOnlyLock.cs" />
+    <Compile Include="Threading\WriteLock.cs" />
+    <Compile Include="Transactions\TransactionScope.cs" />
+    <Compile Include="Utils\ArrayUtil.cs" />
+    <Compile Include="Utils\DateTimeUtil.cs" />
+    <Compile Include="Utils\GuidUtil.cs" />
+    <Compile Include="Utils\StringUtil.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

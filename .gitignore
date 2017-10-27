@@ -286,3 +286,8 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+/Visual Studio 2012/Visualizers/attribcache90.bin
+/Visual Studio 2012/Visualizers/autoexp.cs
+/Visual Studio 2012/Visualizers/autoexp.dll
+/Visual Studio 2012/Visualizers/autoexpce.cs
+/Visual Studio 2012/Visualizers/autoexpce.dll
