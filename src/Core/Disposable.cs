@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace Rigel.Core
+namespace WebApiReferenceImpl.Core
 {
     public abstract class Disposable : IDisposable
     {

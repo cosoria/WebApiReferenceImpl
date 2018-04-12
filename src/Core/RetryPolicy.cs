@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading;
-using Rigel.Core.Logging;
+using WebApiReferenceImpl.Core.Logging;
 
-namespace Rigel.Core
+namespace WebApiReferenceImpl.Core
 {
     public class RetryPolicy : IDisposable 
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Rigel.Core
+namespace WebApiReferenceImpl.Core
 {
     public class DataEventArgs : EventArgs
     {

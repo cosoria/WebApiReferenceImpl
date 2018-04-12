@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Rigel.Core
+namespace WebApiReferenceImpl.Core
 {
         public class Result
     {

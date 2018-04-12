@@ -2,10 +2,10 @@
 using System.Collections;
 using System.Linq;
 using System.Linq.Expressions;
-using Rigel.Core.Reflection;
-using Rigel.Core.Utils;
+using WebApiReferenceImpl.Core.Reflection;
+using WebApiReferenceImpl.Core.Utils;
 
-namespace Rigel.Core
+namespace WebApiReferenceImpl.Core
 {
     public static class Ensure
     {
